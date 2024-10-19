@@ -6,6 +6,24 @@
     border: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Estonia';
+    src: url('/fonts/Estonia-Regular.eot');
+    src: local('Estonia Regular'), local('Estonia-Regular'),
+        url('/fonts/Estonia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Estonia-Regular.woff2') format('woff2'),
+        url('/fonts/Estonia-Regular.woff') format('woff'),
+        url('/fonts/Estonia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.pangolin-regular {
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 body{
     background-color: rgba(46, 45, 45, 0.962);
@@ -51,6 +69,7 @@ header li{
 
 header li a{
     display: inline-block; 
+    font-family: "Pangolin";
     text-decoration: none; /* убирает автоматическое подчеркивание  в созданном нами списке */
     text-transform: uppercase;
     width: 100%;
@@ -101,16 +120,23 @@ aside {
 }
 
 h1 {
-    font-size: 20px;
-    padding: 3px;
+    font-family: Estonia, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #280465;
+    font-weight: bold;
+    padding: 5px;
     margin: 10px;
     text-shadow: 1px 1px 2px #1f1e1f;
 }
 
 h2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    padding: 3px;
+    text-align: center;
+    padding: 5px;
     margin: 10px;
+    color: #280465;
     text-shadow: 1px 1px 2px #1f1e1f;
 }
 
@@ -131,12 +157,17 @@ img:hover {
 }
 
 p {
+    font-family:'Times New Roman', Times, serif;
     text-align: justify;
     text-indent: 20px;
 }
 
 p:first-letter {
     text-transform: uppercase;
+}
+.my_icon{
+    font-size: 20px;
+    color:#280465;
 }
 /*vertical-align: middle; – данное свойство управляет вертикальным
 выравниванием элементов внутри своих родителей. Его применяют
